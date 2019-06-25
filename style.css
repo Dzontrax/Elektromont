@@ -1,0 +1,1306 @@
+/*
+Theme Name: Elektromont main theme
+Description: Test sajt  za Elektromont
+Version: 1.0.0
+Author: Nikola Ajdukovic
+Author URI: najdukovic@gmail.com
+*/
+
+/* GENERERAL CSS */
+
+@font-face {
+    font-family: "Lekton-Regular";
+    src: url("fonts/lekton-regular.woff");
+    
+}
+
+@font-face {
+    font-family: "Lekton-Bold";
+    src: url("fonts/lekton-bold.woff");
+}
+
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+   
+}
+
+.btn-danger {
+    background-color: #D00224 !important;
+    border-radius: 5px !important;
+}
+
+.btn.btn-lg {
+    padding: 10px 20px;
+    font-size: .94rem;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    
+}
+
+.background {
+    background-image:url(assets/images/electricAbstract.jpg);
+}
+
+/* /* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 0;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  .carousel-caption h1 {
+      font-weight: 700;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  } 
+
+
+
+/*-----------------NAVBAR TOGGLER-----------------*/
+
+  /* Icon 1 */
+
+.animated-icon1 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .animated-icon1 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 7%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  .animated-icon1 span {
+      background: #D00224;
+  }
+  
+  .animated-icon3 span {
+      background: #e3f2fd;
+  }
+  
+  .animated-icon4 span {
+      background: #f3e5f5;
+  }
+  
+  .animated-icon1 span:nth-child(1) {
+    top: 10px;
+  }
+  
+  .animated-icon1 span:nth-child(2) {
+    top: 20px;
+  }
+  
+  .animated-icon1 span:nth-child(3) {
+    top: 30px;
+  }
+  
+  .animated-icon1.open span:nth-child(1) {
+    top: 20px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  .animated-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  .animated-icon1.open span:nth-child(3) {
+    top: 20px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+ 
+/*------------------------------------------------*/
+
+.custom-logo-link {
+    margin-right: 50px;
+}
+.navbar-nav ul li {
+    margin-top: 10px;
+}
+nav.navbar.shrink {
+  min-height: 20px;
+  background-color: #000;
+  /* opacity: 1; */
+  border-bottom: 1px solid #000;
+  transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+
+ nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-nav > li > a {
+    color: #fff;
+}
+
+nav.shrink .navbar-nav > li > a:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 15px;
+  transform: scale(0.6,0.6);
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+
+/*------------------------------------------------*/
+
+  .thumbnail-size {
+  width:100% !important; 
+  height:700px !important;
+  object-fit: cover !important; 
+}
+
+.carousel-caption-main{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    text-align: center;
+    font-family: 'Lekton-Bold'
+}
+
+.carousel-caption-main h1{
+    font-size: 2em;
+    width: 250px;
+
+}
+
+.carousel-caption h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.carousel-caption-main p
+{
+    font-size: 1em;
+}
+
+.carousel-caption-main hr 
+{
+    height: 4px;
+    width: 60px;
+    background: #b30001;
+    float: left;
+    margin: 10px auto;
+}
+
+.carousel-inner
+{
+    width:100%;
+    max-height: 500px !important;
+}
+
+.carousel-caption
+{
+    bottom: 10rem;  
+}
+
+#myCarousel{
+    margin-top: 70px;
+}
+
+.btn.btn-danger {
+    background-color: #D00224;
+}
+
+ol.carousel-indicators {
+    margin-top: 10px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 4px;
+    margin-top: 20px;
+    text-indent: 0; 
+    border:none;
+    border-radius: 0;
+    background-color: rgb(230, 230, 230);       
+}
+
+.carousel-indicators .active {
+    width: 20px;
+    height: 4px;
+    margin-top: 20px;
+    background-color: #b20001;
+}
+
+.title{
+    text-align: center;
+
+}
+
+.title h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: -35px;
+}
+
+h5.breadcrumbs{
+    color:#fff;
+}
+
+a.home {
+    font-weight: 600;
+    color:#D00224;
+    text-transform: uppercase;
+}
+
+.title  {
+    z-index: 10000;
+}
+
+
+.experience-banner {
+    margin-top: 95px;
+}
+
+.experience-text{
+    background-color: #F2F3F8;
+    width: 100%;
+    height: auto;
+    float: left; 
+    padding: 50px 20px; 
+   text-align: center;
+    
+}
+
+.red-hr-devider {
+    height: 4px;
+    width: 60px;
+    background: #b30001;
+    margin: 0;
+    float: right;
+    position: absolute;
+    right: 170px;
+    top: 120px;
+}
+
+.since {
+    visibility: hidden;
+}
+
+.experience-text h1{
+    font-family: 'Lekton-Bold';
+    font-size: 48px;
+}
+
+.experience-text p{
+    text-justify: auto;
+    color: gray;
+    font-family: 'Lekton-Regular';
+    font-size: 16px;
+    padding: 60px auto;
+    
+}
+
+.experience-image{
+    max-width: 100%;
+    height: auto;
+    background-image: url("assets/images/homeBannerImg.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.experience-text, .experience-image{
+    float: none;
+}
+
+ .section-counter img {
+    width: 100%;
+    height: 400px;  
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.section-counter {
+    width: 100%;    
+    background-image: url(assets/images/parallax-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+    background-attachment: fixed;
+    margin-top: 100px;   
+}
+
+.section-counter p {
+  color: #fff;
+}
+  
+.big {
+    font-size: 2em;
+    color: #fff;
+    
+}
+
+.conuter-box{
+    border: 1px solid #aeaeae;
+    width: 300px;
+    height: 100px;
+    margin: 10px auto;
+    padding: 50px auto;
+    text-align: center;
+    
+}
+
+
+#delatnostFirstPage.withBackgroundImage{
+    background-image: url(assets/images/electricAbstract.jpg);
+}
+
+/* DEFAULT SECTION NASI PROJEKTI */
+
+
+.inline-menu {
+    margin-bottom: 50px;
+    width: 100%;
+}
+.inline-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
+  
+  .inline-menu li{
+    display: inline;
+  }
+
+  .inline-menu li a {
+    
+    color: #000;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    
+  }
+  
+  
+
+  /* Change the link color on hover */
+  .inline-menu i a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+a.svi-projekti{
+    font-family: 'Lekton-Regular';
+    font-size: 1em;
+    color: gray;
+   
+}
+.section-header {
+    margin: 5px 0 0 10px;
+
+}
+.section-header-title h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5em;
+}
+
+.section-titles{
+    /*margin-top: 40px;*/
+}
+
+.card img{
+    border-radius: 0;
+  }
+  
+.card-block {
+    border-radius: 0;
+}
+
+.partner-logo{  
+  padding: 0; 
+ }
+
+ .jumbotron-onama {    
+    background-image:url("assets/images/about-head-550.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ko-smo-mi {
+    padding: 0px 15px;
+    height:auto;
+}
+
+.ko-smo-mi-tekst{
+    
+    color: #00274E;
+    
+}
+.ko-smo-mi-tekst .widget h1{
+  color: #d00224;
+  margin-bottom: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  
+}
+
+.ko-smo-mi-tekst .widget h3{
+  margin-bottom: 50px;
+  color: #00274E;
+  
+}
+
+.ko-smo-mi-tekst .widget .potpis{
+    color: #d00224;
+    font-weight: 700;
+}
+
+.section-title{
+    text-align: center;
+}
+
+h5.section-title {
+    color:#00274E;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+h6.section-subtitle{
+    margin: 30px 0 50px 0;
+    color: #d00224;
+    font-weight: 600; 
+    font-size: 1.4em;
+    text-align: center;
+}
+
+
+.card-cinjenice h4{
+    text-transform: uppercase;
+    font-size: 1.1em;
+  
+}
+
+.card-cinjenice p {
+    font-size: 1em;
+    color: #00274E;
+
+}
+
+h4.card-title.card-title-onama {
+    font-weight: bold;
+    color: #00274E;
+
+}
+
+.card-body {
+    padding: 20px 0;
+}
+
+/* Section strategija */
+.row-strategija {
+    margin-top: -30px;
+}
+.section-icon{
+    font-size:3em;
+    color:#D00224;
+    margin-top: 30px;
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center; 
+    padding: 10px;
+}
+
+.section-text{
+    padding: 40px 30px;
+    margin-left: 50px;
+    color:#00274E;
+}
+
+.section-text h6{
+    font-weight: 700;
+    font-size: 1.1em;
+    
+}
+.section-text p{
+    font-size: 0.8em;
+}
+
+/* ABOUT-PAGE Section Work with us (radite sa nama) */
+
+
+.section-work-with-us{
+    /* background-image:url("assets/images/grundfos.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 600px;*/
+    /*padding-top: 50px;*/
+}
+
+.section-work-with-us h5 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.section-work-with-us p {
+    color: #fff;
+   
+}
+
+.btn-danger{
+    background-color: #D00224 !important;
+    border-radius: 0 !important;
+}
+
+.btn-danger:hover{
+    background-color: #75000a !important;
+}
+
+/* ABOUT US - SECTION KLIJENTI */
+
+.nasi-klijenti {
+    padding-bottom: 100px;
+    background-image: url("assets/images/section-klijenti-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+/* REFERENCE/PROJEKTI  */
+
+.projekti-grid{
+    padding-right:0;
+    padding-left: 0;
+    overflow: hidden;
+    text-align: left;
+    background-color:#00274E;
+  
+}
+
+.projekti-grid img{
+    max-width: 100%;
+
+}
+
+.projekti-grid ul li {
+    list-style-type: none;
+    margin-left: 0;
+}
+.projekti-grid h3{
+    position:absolute;
+    top: 0;
+    margin-top: 300px;
+    margin-left: 30px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.projekti-grid h6{
+    position: absolute;
+    top:0;
+    margin-top: 500px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #fff;
+
+}
+
+.projekti-grid p{
+    background-color: #D00224;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: 600;
+    position: absolute; 
+     top: 0;
+     margin-top: 50px;
+     margin-left: 30px;
+     width: auto;
+     
+    
+}
+
+/* SINGLE-PROJECT */
+.container-fluid.wide-img{
+    padding: 0;
+    margin: 0;
+}
+.wide-img img{
+    max-width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.section-title-single {
+    font-size: 0.8em;
+    margin-left: 30px;
+}
+
+.galerija-single{
+    background-color: #F5F6F6;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* PAGE KONTAKT */
+.title{
+    margin: 50px auto;
+}
+.title h5{
+    font-size: 1.5em;
+}
+.kontakt{
+    margin: 50px 0 50px 15px;
+}
+
+.kontakt h5{
+    font-size: 1.1em;
+}
+
+.kontakt-awesome-icon{
+    display: inline-block;
+    text-align: left;
+  }
+  .kontakt-awesome-icon h2{
+    color: #00274E;
+    font-size: 1.125rem;
+    font-weight: 500;
+    /*text-align: center;                   removed  */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 40px;                  /*  added  */
+  }
+  .kontakt-awesome-icon ul{
+    padding-left: 0;                    /*  added  */
+  }
+  .kontakt-awesome-icon li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .kontakt-awesome-icon li:last-child{
+    margin: 0;
+  }
+  .kontakt-awesome-icon a{
+    color: #00274E;
+    text-decoration: none;
+  }
+ 
+  .kontakt-awesome-icon p{
+    color: #00274E;
+    line-height: 1.4;
+  }
+  .kontakt-awesome-icon .fa{
+    color: #D00224;
+    font-size: 1.5rem;
+    line-height: 30px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+.rounded-circle {
+    width: 300px;
+    height: 300px;
+}
+
+.awesome-icon .fa{
+    font-size: 1.6em;
+    color: #D00224;
+}
+
+/* STRANICE DELATNOST */
+
+.section-subtitle p{
+    text-align: justify;
+    font-size: 0.9em;
+    margin: 0 15px;
+}
+
+.section-subtitle hr{
+    margin-left:15px;
+}
+
+.section-subtitle h5{
+    margin: 0 15px;
+}
+
+
+.jumbotron.delatnost {
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+
+}
+ul#menu-delatnost.menu{
+ margin-left: -40px;;
+
+}
+
+.delatnost-side-menu{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.delatnost-side-menu li{
+    border: 1px solid #00274E;
+    padding: 15px 20px;
+    width: 100%;
+    list-style-type: none;
+    margin-top: 5px;
+    cursor: pointer;
+    display: block; 
+    margin: 5px 0;
+
+}
+
+.active .delatnost-side-menu li:hover{
+    border-bottom: 3px solid #D00224;
+} 
+
+.delatnost-side-menu li a{
+    font-size: 0.8em;
+    text-align: right;
+    color: #00274E;
+    text-transform: uppercase;
+}
+
+
+/*PAGE-KONTAKT - > Kontakt forma*/
+
+
+.wpcf7 label {
+    font-size: 0.7em;
+    font-weight: 700;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    background-color: #efefef;
+    color: #00274E;
+    padding: 10px 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    border: 1px;
+
+
+}
+
+.wpcf7-textarea {
+    width: 600px;
+}
+
+.wpcf7 input[type="text"]{
+    width: 85%;
+}
+
+.wpcf7 input[type="email"]{
+    width: 85%;
+}
+
+.wpcf7 input[type="submit"]{
+    border: 1px solid gray;
+    color: #00274E;
+    background-color: #fff;
+    padding: 2px 25px;
+    border-radius: 5px;
+    font-size: 0.8em;
+
+}
+.wpcf7 input[type="submit"]:hover{
+  background-color: #efefef;
+    cursor: pointer;
+
+}
+
+/*FOOTER*/
+
+.main-footer-row{
+    margin: 30px 50px;
+}
+
+.footer-item{
+    margin-bottom:30px; 
+    text-align: left;
+    list-style-type: none;
+    color: #fff;
+
+}
+
+.footer-logo{
+    
+}
+
+.footer-objekti .widget ul li{
+list-style-type: none;
+margin-left: -38px;
+color: #fff;
+}
+
+.footer-objekti .widget ul li a {
+    color: #fff;
+    font-size: 0.8em;
+  
+  }
+.footer-menu .widget{
+   text-align: left;
+}
+.footer-menu h3{
+    padding-left: 30px;
+}
+.footer-menu .widget ul li {
+    list-style-type: none;
+    margin-left: -39px;
+    display: block;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+
+.footer-menu .widget ul li a {
+  color: #fff;
+  font-size: 0.8em;
+
+}
+.footer-item .textwidget p{
+    font-size: 0.7em;
+    width: 240px;
+}
+.footer-kontakt .textwidget p{
+    font-size: 0.7em;
+}
+
+.footer-kontakt{
+    text-align: left;
+    
+}
+
+.footer-kontakt h3{
+    text-align: left;
+}
+/*Media Queries*/
+
+/* Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+
+    .section-counter img {
+        width: 100%;
+        height: auto;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ img.custom-logo {
+    margin-right: 55px;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link a{
+    color: #000 !important;
+    -webkit-transition: .35s;
+    transition: .35s;
+}
+
+.navbar-nav > li{
+    
+    margin-right:30px;
+  }
+
+  .navbar-nav > li a{  
+    color: #000;
+  }
+
+  .navbar-nav > li a:hover{  
+    color: #D00224;
+  }
+
+
+.carousel-caption-main{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    text-align: left;
+    font-family: 'Lekton-Bold';
+    color: #fff;
+}
+
+
+
+.carousel-caption h1{
+    font-size: 2.5em;
+}
+
+.carousel-caption-main p{
+    font-size: 1.5em;
+
+}
+
+.carousel-caption-main hr {
+    height: 4px;
+    width: 60px;
+    background: #b30001;
+    float: left;
+    margin: 20px 30px 0 0;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    text-indent: 0; 
+    border: 0;
+    border-radius: none;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+       
+}
+.carousel-indicators .active {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #b20001;
+}
+
+
+.title h2{
+    color: #fff;
+    font-size: 60px;
+}
+
+.experience-banner {
+    margin: 95px 0 0 0;
+}
+
+.experience-text{
+    background-color: #F2F3F8;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px 100px 160px; 
+    float: left;
+    text-align: left;
+
+}
+
+.red-hr-devider {
+    height: 4px;
+    width: 40px;
+    background: #b30001;
+    margin: 0;
+    float: right;
+    position: absolute;
+    right: 225px;
+    top: 85px;
+}
+
+.since {
+    font-size: 24px;
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    visibility: visible;
+
+}
+.experience-text h1{
+    font-family: 'Lekton-Bold';
+    font-size: 3em;
+   
+}
+
+.experience-text p{
+    width: 80%;
+    color: gray;
+    font-family: 'Lekton-Regular';
+   font-size: 15px;
+  
+  
+}
+.experience-image{
+    max-width: 100%;
+    height: auto;
+    background-image: url("assets/images/homeBannerImg.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.section-header {
+    margin: 50px 0 0 30px;
+
+}
+.section-header-title h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 4em;
+}
+
+
+.section-counter {
+    width: 100%;
+    height: 400px;
+    background-image: url("assets/images/parallax-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+   
+}
+
+.section-counter p {
+  color: #fff;
+}
+  
+.big {
+    font-size: 4em;
+    color: #fff;
+    
+}
+
+.conuter-box{
+    border: 1px solid #aeaeae;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    padding: 10px 0 ;
+    text-align: center;
+}
+
+/* SECTION NASI PROJEKTI */
+
+/* Ova klasa je za sve sekcije srednjih naslova */
+
+.section-header {
+    margin: 30px 0 0 30px;
+
+}
+.section-header-title h1{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5em;
+}
+
+a.svi-projekti{
+    font-family: 'Lekton-Regular';
+    font-size: 0.8em;
+    color: black;
+    /* float: right; */
+    
+}
+
+a.svi-projekti:hover {
+    text-decoration: underline;
+}
+
+.svi-projekti{
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.projekti-grid {
+    max-width: 33.3%;
+}
+
+/* Mansory */
+.thumbnail{
+    width: 100%;
+    padding: 2px;
+    border-radius: 0;
+    height: auto;
+    margin: 0;
+}
+
+.card{
+    border-radius: 0;
+}
+.card img{
+    border-radius: 0;
+  }
+
+.partner-logo{
+    
+   /* margin: 0 -15px; */
+   
+} 
+
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
+
+
+
+
+/* FOOTER */
+
+  .jumbotron-onama{
+     
+      background-image:url("assets/images/about-head.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .ko-smo-mi {
+      background-color: #F5F6F6;
+      height:auto;
+  }
+  
+
+  .ko-smo-mi-tekst{
+      padding: 30px 0;
+      color: #00274E;
+      
+  }
+  .ko-smo-mi-tekst .widget h1{
+    color: #d00224;
+    margin-bottom: 50px;
+    
+}
+
+.ko-smo-mi-tekst .widget h3{
+    margin-bottom: 50px;
+    color: #00274E;
+    
+}
+img {
+    width: 100%;
+}
+.ko-smo-mi-direktor .direktor-img{
+    margin: 50px 0 0 0;
+}
+
+ .section-title{
+    margin-top: 50px;
+    /* margin-bottom: -50px; */
+    
+} 
+
+.section-title h5{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00274E;
+}
+.card{
+    border: none;
+}
+
+.card-cinjenice h4{
+    font-weight: bold;
+}
+.card-body.card-body-onama p{
+    font-size: 0.7em;
+}
+.card-body .card-body-onama{
+    padding-left:0;
+}
+
+
+/* STRANICE DELATNOST */
+
+
+
+.delatnosti{
+    margin-bottom: 50px;
+}
+.section-subtitle p{
+    
+    margin: 0;
+}
+
+.section-subtitle hr{
+    margin-left:0;
+}
+
+.section-subtitle h5{
+    margin: 0;
+}
+
+.delatnost-side-menu li{ 
+    width: 220px;
+}
+
+
+} 
